@@ -57,5 +57,7 @@ export class BrandsService {
     this.findOne(id)
     this.brands = this.brands.filter(brand => brand.id !== id)
   }
-
+  fillCarsWithSeedData(brands: Brand[]){
+    this.brands = brands
+  }
 }
